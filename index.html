@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<title id="title">Homework</title>
+<h1>Homework</h1>
+<h2>notting to do</h2>
+<button id="nt">Open new tab</button>
+
+<script>
+    window.addEventListener("blur", function() {
+        document.getElementById("title").textContent = "COME BACK 😡"
+    });
+    window.addEventListener("focus", function() {
+        document.getElementById("title").textContent = "Homework"
+    });
+
+    document.getElementById("nt").addEventListener("click", function() {
+        window.open("https://www.google.ca/?hl=en", "_blank");
+    });
+</script> 
